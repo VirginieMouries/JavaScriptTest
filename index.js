@@ -49,7 +49,7 @@ app.get('/liste', function(req, res) {
             console.log(err);
             return res.send(500);
         } else {
-            console.log("j'ai envoyé la collection");
+            console.log("j'ai envoyé la collection");           
             return res.send(collection);
         }
     });

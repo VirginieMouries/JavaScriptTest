@@ -1,4 +1,4 @@
-app.controller('detailCtrl',function($scope, $rootScope, liste, deviceFactory){
+myApp.controller('detailCtrl',function($scope, $rootScope, liste, deviceFactory){
 
 	// $scope.Devices = liste;
 	

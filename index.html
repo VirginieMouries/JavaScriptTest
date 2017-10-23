@@ -12,9 +12,10 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-default">
-            <a class="nav-item nav-link" href="liste"> Liste utilisateurs </a>
-            <a class="nav-item nav-link" href="boitier"> Boitier </a>
-            <a class="nav-item nav-link" href="detail"> Detail </a>
+			<ul class="nav navbar-nav">
+				<li> <a class="nav-item nav-link" href="#!/liste"> Liste utilisateurs </a> </li>
+				<li> <a class="nav-item nav-link" href="#!/boitier"> Boitier </a> </li>
+				<li> <a class="nav-item nav-link" href="#!/detail"> Detail </a> </li>
         </nav>
 	<div class="container" ng-app="myApp">
 			
@@ -25,6 +26,10 @@
 	</div>
 
 	<script src="/client/myApp.js"></script>
+	<script src="/client/controller/listeCtrl.js"></script>
+	<script src="/client/controller/detailCtrl.js"></script>
+	<script src="/client/controller/boitierCtrl.js"></script>
+	<script src="/client/service/listeService.js"></script>
 		
 	</body>
 </html>
