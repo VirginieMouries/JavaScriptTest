@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp',['ngRoute']);
+var myApp = angular.module('myApp',['ngRoute','ngResource']);
 
 /**
  * Configuration du module principal : myApp
@@ -10,8 +10,13 @@ myApp.config(['$routeProvider','$locationProvider',
         $routeProvider
         .when('/liste', {
             templateUrl: 'client/views/liste.html',
-            controller: 'listeCtrl'
-            
+            controller: 'listeCtrl',
+            resolve:{
+                liste:function(listeFactory){
+                    console.log('myApp, resolve, liste');
+                    return listeFactory.query();
+                }
+            }
         })
         .when('/boitier', {
             templateUrl: 'client/views/boitier.html',

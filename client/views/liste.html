@@ -1,5 +1,12 @@
 
+<p> La page liste.html </p>
 
-
-		<p> La page liste.html </p>
+<div class="row">
+	<ul class="list-group">
+		<li class="list-group-item" ng-repeat="n in liste" id="item{{n._id}}" >
+			<a class="pull-left" ng-href="">{{n.nom}}&nbsp;{{n.prenom}}</a>
+		</li>
+	</ul>
+	
+</div>
 

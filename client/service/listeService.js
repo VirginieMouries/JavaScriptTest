@@ -1,9 +1,9 @@
-
+/*
 myApp.factory('listeFactory', ['$resource',
 function($resource) {
-	
+	console.log("listeFactory");
 	myUserPhotons.getUsers = function(){
-		console.log("Service");		
+				
 		return UserPhoton.find();				
 	};
 	
@@ -12,10 +12,11 @@ function($resource) {
 	}
 ]);
 
-/*
+*/
 
 myApp.factory('listeFactory', ['$resource',
 	function($resource) {
+		console.log("listeFactory ressource");
 		return $resource('/liste/:userId', { userId: '@_id'
 		}, {
 			update: {
@@ -25,4 +26,3 @@ myApp.factory('listeFactory', ['$resource',
 	}
 ]);
 
-*/

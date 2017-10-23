@@ -1,6 +1,6 @@
-myApp.controller('listeCtrl',function($scope, $rootScope, liste, deviceFactory){
+myApp.controller('listeCtrl',function($scope, $rootScope, liste, listeFactory){
 
 	// console.log("listeCtrl");
-	$scope.UserPhoton = liste;
+	$scope.liste = liste;
 	
 });

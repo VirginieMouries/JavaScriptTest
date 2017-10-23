@@ -25,6 +25,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+// pour le traitements des json
 app.use(bodyParser.json());
 
 // je déclare mon dossier qui contient mes vues
@@ -49,7 +50,11 @@ app.get('/liste', function(req, res) {
             console.log(err);
             return res.send(500);
         } else {
-            console.log("j'ai envoyé la collection");           
+            console.log("j'ai envoyé la collection"); 
+            if (collection == null){
+                console.log("vide");
+            }
+
             return res.send(collection);
         }
     });
